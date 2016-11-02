@@ -18,7 +18,10 @@ defmodule EXJSX.Mixfile do
   end
 
   defp deps do
-    [{:jsx, "~> 2.8.0"}, {:ex_doc, ">= 0.0.0", only: :dev}]
+    [
+      {:jsx, git: "git://github.com/talentdeficit/jsx.git", ref: "c61be97"},
+      {:ex_doc, ">= 0.0.0", only: :dev}
+    ]
   end
 
   defp description do
